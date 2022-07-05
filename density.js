@@ -4,10 +4,6 @@
 myConnector.getSchema = function(schemaCallback) {
 
         var cols = [{
-            id: "Timestamp",
-            alias: "timestamp",
-            dataType: "string"
-        },{
             id: "RasterId",
             alias: "Raster_Id",
             dataType: tableau.dataTypeEnum.string
@@ -118,13 +114,6 @@ myConnector.getSchema = function(schemaCallback) {
             var feat = res.rasters
             tableData = [];
 
-            var today = new Date();
-
-            var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-
-            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-            var dateTime = date+' '+time;
 
             for (var i = 0, len = feat.length; i < len; i++) {
 
