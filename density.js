@@ -69,7 +69,7 @@ myConnector.getSchema = function(schemaCallback) {
 
     myConnector.getData = function (table, doneCallback) {
 
-            var lastId = parseInt(table.incrementValue || -1);
+        var lastId = parseInt(table.incrementValue || -1);
 
         $.ajax({
             headers: {
