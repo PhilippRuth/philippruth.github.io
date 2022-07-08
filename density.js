@@ -63,7 +63,7 @@ myConnector.getSchema = function(schemaCallback) {
             incrementColumnId: "Timestamp"
         };
 
-        schemaCallback([tableSchema]);
+        schemaCallback([tableInfo]);
     };
 
 
